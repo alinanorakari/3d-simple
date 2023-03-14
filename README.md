@@ -22,8 +22,9 @@ This 3d engine
 
 This 3d engine does not
 - load 3d model files
-- shade faces based on light sources or direction
-- have optimized image effects
+- shade faces based on light sources or normal direction (because it knows nothing about normals)
+- render textures
+- have optimized image effects for faster than realtime rendering of frames
 - work well with extreme perspective values or coordinates in the far back
 - have easily changeable parameters for a lot of things
 
