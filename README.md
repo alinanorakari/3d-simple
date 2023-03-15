@@ -11,7 +11,7 @@ This 3d engine
 - renders objects consisting of arbitrary n-gons with flat colors and an outlines
 - honors colors with alpha
 - supports perspective
-- tries (badly) to sort drawing order by z-depth of the faces
+- tries to sort drawing order by z-depth of the faces
 - supports arbitrary rotation via euler angles
 - applies fuzzy dithering as an effect to simulate image noise
 - applies line shifting as an effect to simulate VCR tracking artefacts
@@ -36,10 +36,11 @@ If I were to continue this project I would
 - create a more robust data format, probably split into a list of vertices and a list of faces referencing vertices
 - implement a more robust way to determine z-depth of a face
 - implement vertex colors (optional)
-- immplement proper scaling or vertices based on depth so that they can't overshoot an arbitrary point but will shrink indefinitely the farther they are
+- implement proper scaling or vertices based on depth so that they can't overshoot an arbitrary point but will shrink indefinitely the farther they are
 - implement a proper camera system
 - implement normal vectors for the faces to facilitate light based shading, fresnel shading and LUT based shading
+- implement rotation via quaternions
 - add keyframe based animation
 - put all the parts that should be variable into a nice config object
-- honestly … reimplement it in another programming laguage than Python
+- honestly … reimplement it in a more exeecution speed conscious programming laguage than Python (e.g. Rust)
 - think hard about why anyone would want to have a generalized simple 3d rendering engine that renders purely CPU based in a world where every computer supports opengl in some way
